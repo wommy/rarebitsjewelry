@@ -1,0 +1,17 @@
+{
+  "name": "technomad-11ty-template",
+  "version": "0.3.0",
+  "description": "technomad 11ty template",
+  "repository": "git@github.com:wommy/technomad_11ty.git",
+  "author": "wommy <tom@technomad.media>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.3.5"
+  },
+  "scripts": {
+    "tailwind": "postcss src/tailwind.css -o src/11ty/css/tailwind.css"
+  }
+}
