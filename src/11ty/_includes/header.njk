@@ -1,7 +1,30 @@
+{#
 <header>
 	<nav>
 	{%- for key, url in { "home": "/" } %}
 		<a {% if url == page.url %}class="active"{% else %}href="{{ url }}"{% endif %}>{{ key }}</a>
 	{%- endfor %}
+	</nav>
+</header>
+#}
+<header>
+	<a href="/">
+		<img src="" alt="rare bits jewelry logo">
+	</a>
+	<nav>
+		<a href="/">shop</a>
+	{# :hover subNav #}
+		<nav>
+			<a href="/featured">featured</a>
+			<a href="/chrysocolla">chrysocolla</a>
+			<a href="/no-8-turquoise">no. 8 turquoise</a>
+			<a href="/white-buffalo-turquoise">white buffalo turquoise</a>
+			<a href="/more-stones">more stones</a>
+			<a href="/sterling-silver">sterling silver</a>
+			<a href="/sale">sale</a>
+		</nav>
+		<a href="/about">about</a>
+		<a href="/custom-order">custom order</a>
+		<a href="/news">news</a>
 	</nav>
 </header>

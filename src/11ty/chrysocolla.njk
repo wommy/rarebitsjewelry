@@ -1,0 +1,22 @@
+---
+layout: _base
+---
+<main>
+	<h1>arizona chrysocolla</h1>
+	<p>Chrysocolla, the queen of carbonate copper gemstones, is an alluring, vivid blue-green color and is often mistaken for turquoise because they share many visual similarities. With Arizona origins, it can often be found intermingling amongst malachite, turquoise, azurite, jasper, lapis, malachite and quartz crystal minerals, offering incredible textural variety.</p>
+	<nav>
+		<button>all</button>
+		<button>bracelets</button>
+		<button>necklaces</button>
+		<button>rings</button>
+	</nav>
+	<div>
+		{%- for each in %}
+		<div>
+			<img src="" alt="">
+			<h2>{{title}}</h2>
+			<p>{{price}}</p>
+		</div>
+		{%- endfor %}
+	</div>
+</main>

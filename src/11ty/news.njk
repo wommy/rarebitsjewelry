@@ -1,0 +1,15 @@
+---
+layout: _base
+---
+<main>
+	{%- for each in news %}
+	<div>
+		<a href="/news/{{title|slug}}">
+			<h2>{{title}}</h2>
+		</a>
+		<div>
+			<span>{{date}} - </span><a href="/news?author={{author}}">{{author}}</a>
+		</div>
+	</div>
+	{%- endfor %}
+</main>

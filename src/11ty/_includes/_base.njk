@@ -4,14 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>{{ pkg.name }}</title>
+<title>{% if title %}{{ title }} - {% endif %}rare bits jewelry</title>
 <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body>
 {%- include "header.njk" %}
-<main>
-{{ content | safe }}
-</main>
+{{content}}
+<footer>
+	<a href="/shipping-returns">shipping + returns</a>
+	<form action="">
+		<h2>Subscribe to our newsletter.</h2>
+		<div>
+			<input type="email">
+			<input type="submit" value="sign up">
+		</div>
+	</form>
+	<p>Rare Bits Jewelry  |  ©2019</p>
+</footer>
 <script></script>
 </body>
 </html>
