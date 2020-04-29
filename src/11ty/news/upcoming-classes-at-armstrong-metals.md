@@ -5,6 +5,7 @@ author: Holly Strawbridge
 tags:
 - news
 title: UPCOMING CLASSES AT ARMSTRONG METALS
+layout: ''
 
 ---
 Hello Summer!
