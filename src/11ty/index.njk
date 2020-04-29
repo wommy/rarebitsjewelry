@@ -1,21 +1,8 @@
 ---
 layout: _base
-data:
-	"featured products":
-		"death's head moth necklace" 146,
-		"fuck ring": 50,
-		"skull stacking ring": 32,
-		"coffin stacking ring": 35
 ---
 <main>
 	<h1>featured products</h1>
 	<div>
-		{%- for title, price in data.featured_products %}
-		<a href="/featured/{{title | slug}}">
-			<img src="/featured/{{title}}_1" alt="{{title}}">
-		{# :hover img_2 #}
-			<h2>{{title}}</h2>
-			<span>from {{price}}</span>
-		</a>
 	</div>
 </main>

@@ -1,19 +1,17 @@
 {#
 <header>
-	<nav>
-	{%- for key, url in { "home": "/" } %}
-		<a {% if url == page.url %}class="active"{% else %}href="{{ url }}"{% endif %}>{{ key }}</a>
-	{%- endfor %}
-	</nav>
 </header>
 #}
-<header>
+<header class="flex items-center justify-between px-16 py-12">
 	<a href="/">
-		<img src="" alt="rare bits jewelry logo">
+		<img src="https://res.cloudinary.com/wommy/w_320/RBJ/rbj7_d6fkmo.png" alt="rare bits jewelry logo">
 	</a>
 	<nav>
-		<a href="/">shop</a>
-	{# :hover subNav #}
+		{%- for key, url in { "shop": "/", "about": "/about", "custom order": "/custom-order", "news": "/news" } %}
+		<a {% if url == page.url %}class="active"{% else %}href="{{ url }}"{% endif %}>{{ key }}</a>
+		{%- endfor %}
+
+	{# :hover subNav 
 		<nav>
 			<a href="/featured">featured</a>
 			<a href="/chrysocolla">chrysocolla</a>
@@ -23,8 +21,6 @@
 			<a href="/sterling-silver">sterling silver</a>
 			<a href="/sale">sale</a>
 		</nav>
-		<a href="/about">about</a>
-		<a href="/custom-order">custom order</a>
-		<a href="/news">news</a>
-	</nav>
+	#}
+
 </header>

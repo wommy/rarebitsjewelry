@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{% if title %}{{ title }} - {% endif %}rare bits jewelry</title>
-<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="/css/tailwind.css">
 </head>
-<body>
+<body class="bg-gray-100">
 {%- include "header.njk" %}
-{{content}}
-<footer>
-	<a href="/shipping-returns">shipping + returns</a>
-	<form action="">
-		<h2>Subscribe to our newsletter.</h2>
+{{ content | safe }}
+<footer class="mt-24 flex flex-col items-center">
+	<a href="/shipping-returns">SHIPPING + RETURNS</a>
+	<h3 class="mt-10">Subscribe to our newsletter.</h3>
+	<form class="mt-6" action="">
 		<div>
-			<input type="email">
-			<input type="submit" value="sign up">
+			<input class="px-6 py-4 border border-gray-200" type="email" placeholder="Email Address">
+			<input class="ml-2 px-6 py-4 border border-black" type="submit" value="SIGN UP">
 		</div>
 	</form>
-	<p>Rare Bits Jewelry  |  ©2019</p>
+	<p class="mt-6">Rare Bits Jewelry  |  ©2019</p>
 </footer>
 <script></script>
 </body>
