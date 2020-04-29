@@ -1,0 +1,12 @@
+---
+layout: _base
+---
+<article class="flex flex-col items-center w-2/3 mx-auto">
+	<h3 class="text-3xl">{{title}}</h3>
+	<div>
+		<span>{{date}} - </span><a href="/news?author={{author}}">{{author}}</a>
+	</div>
+	<section class="mt-12 flex flex-col w-2/3 mx-auto">
+		{{ content | safe }}
+	</section>
+</article>
