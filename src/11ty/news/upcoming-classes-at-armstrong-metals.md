@@ -3,7 +3,7 @@ date: 2020-04-29T16:46:27Z
 author: Holly Strawbridge
 title: UPCOMING CLASSES AT ARMSTRONG METALS
 content: |-
-  Hello Summer !
+  Hello Summer!
 
   I’m so excited to be running another series of 3 hour Wednesday Workshops with Armstrong Metals in Livonia, MI! Join me in a small group workshop and learn the skills and techniques needed to master metalsmithing. All classes run on Wednesday evenings from 6pm-9pm. Click on the class title to sign up directly through Armstrong.
 
