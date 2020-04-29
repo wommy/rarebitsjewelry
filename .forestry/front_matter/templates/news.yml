@@ -34,3 +34,5 @@ fields:
     schema:
       format: markdown
   label: content
+pages:
+- src/11ty/news/upcoming-classes-at-armstrong-metals.md
