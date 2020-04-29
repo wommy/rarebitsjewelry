@@ -2,6 +2,13 @@
 label: news
 hide_body: false
 fields:
+- name: template
+  type: text
+  config:
+    required: true
+  label: template
+  hidden: true
+  default: _base
 - name: title
   type: text
   config:
