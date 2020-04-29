@@ -26,5 +26,6 @@ content: |-
   [Salt Water Etching](http://armstrongtoolsupply.com/saltwater-etching-with-mary-kernahan.html)
 
   Armstrong Metal’s complete class list [here](http://armstrongtoolsupply.com/jewelry-making-classes/)
+tags: []
 
 ---
