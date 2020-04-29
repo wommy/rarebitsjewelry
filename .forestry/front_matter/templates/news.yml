@@ -2,11 +2,11 @@
 label: news
 hide_body: false
 fields:
-- name: template
+- name: layout
   type: text
   config:
     required: true
-  label: template
+  label: layout
   hidden: true
   default: _base
 - name: date
