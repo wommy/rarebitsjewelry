@@ -25,6 +25,11 @@ fields:
   label: author
   hidden: true
   default: Holly Strawbridge
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+  hidden: true
 - name: content
   type: textarea
   default: ''
