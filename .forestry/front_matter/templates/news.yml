@@ -38,5 +38,3 @@ fields:
   config:
     required: true
   label: title
-pages:
-- src/11ty/news/upcoming-classes-at-armstrong-metals.md
