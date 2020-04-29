@@ -9,11 +9,6 @@ fields:
   label: template
   hidden: true
   default: _base
-- name: title
-  type: text
-  config:
-    required: true
-  label: title
 - name: date
   type: datetime
   label: date
@@ -38,14 +33,10 @@ fields:
   - news
   label: tags
   hidden: true
-- name: content
-  type: textarea
-  default: ''
+- name: title
+  type: text
   config:
     required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: content
+  label: title
 pages:
 - src/11ty/news/upcoming-classes-at-armstrong-metals.md
