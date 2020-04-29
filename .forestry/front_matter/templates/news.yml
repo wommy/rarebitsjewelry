@@ -27,7 +27,8 @@ fields:
   default: Holly Strawbridge
 - name: tags
   type: tag_list
-  default: []
+  default:
+  - news
   label: tags
   hidden: true
 - name: content
