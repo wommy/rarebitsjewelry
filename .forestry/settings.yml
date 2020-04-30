@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Shop
+- type: directory
+  path: src/11ty/shop
+  label: shop
+  create: documents
+  match: "**/*"
+- type: heading
   label: News
 - type: directory
   path: src/11ty/news
