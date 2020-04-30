@@ -1,52 +1,44 @@
 ---
 layout: _base
 ---
-<main class="flex w-10/12 mx-auto justify-evenly">
-	<div>
-		<h3>all</h3>
-		<div class="mt-4 flex">
-			<div>
-				<div>
-					<h4>metal</h4>
-					{%- for each in collections.metal %}
-					<div>
-						<img src="{{each.data.img}}">
-					</div>
-					<p>{{each.data.title}}</p>
-					{%- endfor %}
-				</div>
-				<div class="mt-4">
-					<h4>turquoise</h4>
-					{%- for each in collections.turquoise %}
-					<div>
-						<img src="{{each.data.img}}">
-					</div>
-					<p>{{each.data.title}}</p>
-					{%- endfor %}
-				</div>
-			</div>
-			<div class="m-4">
-				<div>
-					<h4>misc gems</h4>
-					{%- for each in collections.other %}
-					<div>
-						<img src="{{each.data.img}}">
-					</div>
-					<p>{{each.data.title}}</p>
-					{%- endfor %}
-				</div>
-				<div class="mt-4">
-					<h4>chrysocolla</h4>
-					{%- for each in collections.chrysocolla %}
-					<div>
-						<img src="{{each.data.img}}">
-					</div>
-					<p>{{each.data.title}}</p>
-					{%- endfor %}
-				</div>
-			</div>
+<main class="w-10/12 mx-auto">
+	<h4>chrysocolla</h4>
+	<div class="flex flex-wrap">
+		{%- for each in collections.chrysocolla %}
+		<div class="w-1/4">
+			<img src="{{each.data.img}}">
+			<p>{{each.data.title}}</p>
 		</div>
+		{%- endfor %}
 	</div>
+	<h4>turquoise</h4>
+	<div class="flex flex-wrap">
+		{%- for each in collections.turquoise %}
+		<div class="w-1/4">
+			<img src="{{each.data.img}}">
+			<p>{{each.data.title}}</p>
+		</div>
+		{%- endfor %}
+	</div>
+	<h4>misc gems</h4>
+	<div class="flex flex-wrap">
+		{%- for each in collections.other %}
+		<div class="w-1/4">
+			<img src="{{each.data.img}}">
+			<p>{{each.data.title}}</p>
+		</div>
+		{%- endfor %}
+	</div>
+	<h4>metal</h4>
+	<div class="flex flex-wrap">
+		{%- for each in collections.metal %}
+		<div class="w-1/4">
+			<img src="{{each.data.img}}">
+			<p>{{each.data.title}}</p>
+		</div>
+		{%- endfor %}
+	</div>
+{#
 	<div>
 		<h3>by style</h3>
 		<div class="mt-4 flex">
@@ -80,4 +72,5 @@ layout: _base
 			</div>
 		</div>
 	</div>
+#}
 </main>
