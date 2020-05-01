@@ -1,8 +1,18 @@
 ---
 layout: _base
 ---
-<main class="w-10/12 mx-auto">
-	<h4>chrysocolla</h4>
+<main class="w-10/12 mx-auto flex flex-col items-center">
+	<h3 class="text-5xl">FEATURED PRODUCTS</h3>
+	<div class="mt-24 flex flex-wrap">
+		{%- for each in collections.featured %}
+		<div class="w-1/4">
+			<img src="{{each.data.img}}">
+			<p>{{each.data.title}}</p>
+			<p>${{each.data.price}}.00</p>
+		</div>
+		{%- endfor %}
+	</div>
+	<h3 class="mt-24 text-5xl">CHRYSOCOLLA</h3>
 	<div class="flex flex-wrap">
 		{%- for each in collections.chrysocolla %}
 		<div class="w-1/4">

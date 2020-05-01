@@ -1,14 +1,11 @@
-{#
-<header>
-</header>
-#}
 <header class="flex items-center justify-between px-16 py-12">
 	<a href="/">
 		<img src="https://res.cloudinary.com/wommy/w_320/RBJ/rbj7_d6fkmo.png" alt="rare bits jewelry logo">
 	</a>
 	<nav>
-		{%- for key, url in { "shop": "/", "about": "/about", "custom order": "/custom-order", "news": "/news" } %}
-		<a {% if url == page.url %}class="active"{% else %}href="{{ url }}"{% endif %}>{{ key }}</a>
+		<a href="/">shop</a>
+		{%- for each in [ "chrysocolla", "turquoise", "more", "metals", "about", "custom", "news" ] %}
+		<a {% if each == page.url %}class="active"{% else %}href="/{{ each }}"{% endif %}>{{ each }}</a>
 		{%- endfor %}
 
 	{# :hover subNav 
